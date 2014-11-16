@@ -126,9 +126,9 @@ public:
 			else
 			{
 				int index = (m+n)/2 - n;
-				if (index == 0)
+				if (prevNum > 0)
 				{
-					return (double)(prevNum+A[index])/2;
+					return (double)(prevNum+A[aLen])/2;
 				}
 				else
 					return ((double)A[index-1]+A[index])/2;
@@ -145,9 +145,9 @@ public:
 			{
 				int index = (m+n)/2 - m;
 
-				if (index == 0)
+				if (prevNum > 0)
 				{
-					return (double)(prevNum+B[index])/2;
+					return (double)(prevNum+B[bLen])/2;
 				}
 				else
 					return ((double)B[index-1]+B[index])/2;
